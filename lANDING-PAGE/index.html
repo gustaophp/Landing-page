@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Extrema MTB – O simulador de Mountain Bike mais intenso para mobile e PC. Domina trilhos reais em Araxá, personaliza tua bike e derruba os rivais. Garante teu acesso antecipado à Beta!" />
+    <title>Extrema MTB – Sente a Adrenalina do Mountain Bike Puro em Araxá</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+    <!-- ════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">EXTREMA <strong>MTB</strong></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#experience">O Jogo</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#characters">Rivais</a></li>
+                <li><a href="#requirements">Requisitos</a></li>
+            </ul>
+            <a href="#newsletter" class="nav-cta">Beta: Em Breve</a>
+            <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav-mobile-menu" id="navMobileMenu">
+            <a href="#experience" onclick="closeMobileMenu()">O Jogo</a>
+            <a href="#features" onclick="closeMobileMenu()">Features</a>
+            <a href="#characters" onclick="closeMobileMenu()">Rivais</a>
+            <a href="#requirements" onclick="closeMobileMenu()">Requisitos</a>
+            <a href="#newsletter" class="nav-cta-mobile" onclick="closeMobileMenu()">Quero Acesso Beta</a>
+        </div>
+    </nav>
+
+    <!-- ════════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="assets/hero_bg.png" alt="Ciclista em backflip na floresta de Araxá" class="hero-img" />
+            <div class="hero-overlay"></div>
+            <div class="hero-noise"></div>
+        </div>
+
+        <div class="hero-particles" id="heroParticles"></div>
+
+        <div class="hero-content container">
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span>
+                PRÉ-LANÇAMENTO — FASE BETA
+            </div>
+
+            <h1 class="hero-headline reveal">
+                Sente a Adrenalina<br />
+                do <span class="highlight">Mountain Bike</span><br />
+                Puro em <span class="highlight-city">Araxá.</span>
+            </h1>
+
+            <p class="hero-sub reveal">
+                Domina trilhos realistas, personaliza a tua bike e derruba os teus rivais<br class="br-desktop" />
+                no simulador de MTB mais intenso para <strong>mobile e PC</strong>.
+            </p>
+
+            <div class="hero-ctas reveal">
+                <a href="#newsletter" class="btn-primary" id="heroCTA">
+                    <span class="btn-icon">🚵</span>
+                    Quero Acesso Antecipado à Beta
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#experience" class="btn-ghost">Ver o Jogo ↓</a>
+            </div>
+
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-val">8</span>
+                    <span class="stat-label">Bikes</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-val">3+</span>
+                    <span class="stat-label">Trilhos Reais</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-val">∞</span>
+                    <span class="stat-label">Adrenalina</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-hint">
+            <div class="scroll-wheel"></div>
+            <span>Role para baixo</span>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       EXPERIENCE SECTION
+  ════════════════════════════════════════ -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-label reveal">// O JOGO</div>
+            <h2 class="section-title reveal">
+                Onde o Realismo<br /><span class="highlight">Encontra o Caos.</span>
+            </h2>
+
+            <div class="experience-grid">
+                <div class="exp-text reveal">
+                    <p class="exp-lead">
+                        <strong>Extrema MTB</strong> não é mais um jogo de bicicleta. É a fusão brutal entre
+                        <span class="accent">física semirrealista</span> — cada pedra, raiz e declive calculado com
+                        precisão —
+                        e a adrenalina do <span class="accent">combate arcade</span>.
+                    </p>
+                    <p>
+                        Inspirado nas lendárias <strong>Olimpíadas de Motobike de Araxá</strong>, o jogo coloca-te em
+                        ambientes
+                        surreais como o Barreiro com um objetivo claro: chegar primeiro.
+                        Mas aqui, o caminho mais rápido pode exigir um chute certeiro no rival ao teu lado.
+                    </p>
+                    <p>
+                        Pedala. Deriva. Supera a gravidade. Nocauteia. Vence.
+                    </p>
+                    <a href="#newsletter" class="btn-primary btn-sm">
+                        Entra na Beta <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+                <div class="exp-visual reveal">
+                    <div class="exp-card-stack">
+                        <div class="exp-card ec-physics">
+                            <strong>Física Realista</strong>
+                            <p>Motor de física próprio — gravidade, atrito e impacto calculados em tempo real.</p>
+                        </div>
+                        <div class="exp-card ec-combat">
+                            <strong>Combate Arcade</strong>
+                            <p>Chutes, empurrões e bloqueios. A corrida mais intensa que já jogas-te.</p>
+                        </div>
+                        <div class="exp-card ec-world">
+                            <strong>Locais Reais</strong>
+                            <p>Mapas baseados em locais reais do cerrado mineiro e da Serra da Canastra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mud splatter decoration -->
+        <div class="mud-decor mud-left"></div>
+        <div class="mud-decor mud-right"></div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       FEATURES SECTION
+  ════════════════════════════════════════ -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-label reveal">// FUNCIONALIDADES</div>
+            <h2 class="section-title reveal">
+                Tudo que um Trilho<br /><span class="highlight">Brutal Precisa.</span>
+            </h2>
+
+            <div class="features-grid">
+
+                <div class="feature-card reveal" style="--delay:0ms">
+                    <div class="fc-icon-wrap">
+                    </div>
+                    <h3>Física Semirrealista</h3>
+                    <p>
+                        Sente cada impacto e controla o teu equilíbrio em descidas vertiginosas.
+                        O motor de física responde a cada variação do terreno: pedras, raízes, lama e poeira.
+                    </p>
+                    <div class="fc-tag">Motor Próprio</div>
+                </div>
+
+                <div class="feature-card reveal" style="--delay:100ms">
+                    <div class="fc-icon-wrap">
+                    </div>
+                    <h3>Mundo Aberto & Trilhas Reais</h3>
+                    <p>
+                        Explora o <strong>Barreiro Mineral</strong> e a <strong>Serra da Canastra</strong> com gráficos
+                        impressionantes. Cada trilho foi recriado digitalmente com precisão topográfica.
+                    </p>
+                    <div class="fc-tag">Araxá — MG</div>
+                </div>
+
+                <div class="feature-card reveal" style="--delay:200ms">
+                    <div class="fc-icon-wrap">
+                    </div>
+                    <h3>Personalização Total</h3>
+                    <p>
+                        Escolhe entre <strong>Varios modelos de bikes</strong> e centenas de acessórios no teu
+                        <em>Bicicletário</em>. Customiza quadro, rodas, guidão e muito mais.
+                    </p>
+                    <div class="fc-tag">Bicicletário</div>
+                </div>
+
+                <div class="feature-card reveal" style="--delay:300ms">
+                    <div class="fc-icon-wrap">
+                    </div>
+                    <h3>Sistema de Combate</h3>
+                    <p>
+                        Não é apenas pedalar. Usa <strong>estratégia e força</strong> para tirar os rivais
+                        do caminho. Chutes, cotoveladas e bloqueios num contexto de corrida de alta velocidade.
+                    </p>
+                    <div class="fc-tag">Combate Real-Time</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       CHARACTERS SECTION
+  ════════════════════════════════════════ -->
+    <section class="characters" id="characters">
+        <div class="container">
+            <div class="section-label reveal">// OS TEUS RIVAIS</div>
+            <h2 class="section-title reveal">
+                Conhece Quem Vai<br /><span class="highlight">Tentar Parar-te.</span>
+            </h2>
+            <p class="section-sub reveal">
+                Cada rival tem uma história, um estilo de corrida e um motivo para te odiar. Estás pronto?
+            </p>
+
+            <div class="char-carousel-wrap">
+                <div class="char-carousel" id="charCarousel">
+
+                    <div class="char-card active" data-index="0">
+                        <div class="char-img-wrap">
+                            <img src="assets/carlos.png" alt="Carlos Henrique – O Veterano" loading="lazy" />
+                            <div class="char-img-glow glow-orange"></div>
+                        </div>
+                        <div class="char-info">
+                            <span class="char-role">O Veterano</span>
+                            <h3 class="char-name">Carlos Henrique</h3>
+                            <p class="char-desc">
+                                Vinte anos nos trilhos de Araxá fizeram de Carlos uma lenda viva — e um rival
+                                implacável.
+                                Conhece cada pedra da Serra da Canastra de olhos fechados. Subestimá-lo é o maior erro
+                                que podes cometer.
+                            </p>
+                            <div class="char-stats">
+                                <div class="cstat"><span class="cstat-label">Resistência</span>
+                                    <div class="cstat-bar">
+                                        <div class="cstat-fill" style="width:90%"></div>
+                                    </div>
+                                </div>
+                                <div class="cstat"><span class="cstat-label">Velocidade</span>
+                                    <div class="cstat-bar">
+                                        <div class="cstat-fill" style="width:72%"></div>
+                                    </div>
+                                </div>
+                                <div class="cstat"><span class="cstat-label">Combate</span>
+                                    <div class="cstat-bar">
+                                        <div class="cstat-fill" style="width:65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="char-card" data-index="1">
+                        <div class="char-img-wrap">
+                            <img src="assets/mauro.png" alt="Mauro – O Vilão de Elite" loading="lazy" />
+                            <div class="char-img-glow glow-red"></div>
+                        </div>
+                        <div class="char-info">
+                            <span class="char-role">O Vilão de Elite</span>
+                            <h3 class="char-name">Mauro</h3>
+                            <p class="char-desc">
+                                Financiado por patrocinadores obscuros, Mauro não tem escrúpulos.
+                                Ele não compete por glória — compete por controle. E não para até eliminar toda a
+                                concorrência,
+                                de qualquer forma necessária.
+                            </p>
+                            <div class="char-stats">
+                                <div class="cstat"><span class="cstat-label">Resistência</span>
+                                    <div class="cstat-bar">
+                                        <div class="cstat-fill" style="width:80%"></div>
+                                    </div>
+                                </div>
+                                <div class="cstat"><span class="cstat-label">Velocidade</span>
+                                    <div class="cstat-bar">
+                                        <div class="cstat-fill" style="width:88%"></div>
+                                    </div>
+                                </div>
+                                <div class="cstat"><span class="cstat-label">Combate</span>
+                                    <div class="cstat-bar">
+                                        <div class="cstat-fill" style="width:95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="char-card" data-index="2">
+                        <div class="char-img-wrap">
+                            <img src="assets/amelia.png" alt="Amélia Ribeiro – A Lenda Viva" loading="lazy" />
+                            <div class="char-img-glow glow-gold"></div>
+                        </div>
+                        <div class="char-info">
+                            <span class="char-role">A Lenda Viva</span>
+                            <h3 class="char-name">Amélia Ribeiro</h3>
+                            <p class="char-desc">
+                                Três vezes campeã das Olimpíadas de Motobike de Araxá. Amélia saiu da reforma
+                                para um último trilho — e não veio para ficar em segundo lugar.
+                                A sua presença na corrida é ao mesmo tempo inspiração e terror para os adversários.
+                            </p>
+                            <div class="char-stats">
+                                <div class="cstat"><span class="cstat-label">Resistência</span>
+                                    <div class="cstat-bar">
+                                        <div class="cstat-fill" style="width:85%"></div>
+                                    </div>
+                                </div>
+                                <div class="cstat"><span class="cstat-label">Velocidade</span>
+                                    <div class="cstat-bar">
+                                        <div class="cstat-fill" style="width:80%"></div>
+                                    </div>
+                                </div>
+                                <div class="cstat"><span class="cstat-label">Combate</span>
+                                    <div class="cstat-bar">
+                                        <div class="cstat-fill" style="width:78%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Controls -->
+                <div class="char-controls">
+                    <button class="char-btn" id="charPrev" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="char-dots">
+                        <button class="char-dot active" data-target="0" aria-label="Carlos Henrique"></button>
+                        <button class="char-dot" data-target="1" aria-label="Mauro"></button>
+                        <button class="char-dot" data-target="2" aria-label="Amélia Ribeiro"></button>
+                    </div>
+                    <button class="char-btn" id="charNext" aria-label="Próximo">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       REQUIREMENTS SECTION
+  ════════════════════════════════════════ -->
+    <section class="requirements" id="requirements">
+        <div class="container">
+            <div class="section-label reveal">// REQUISITOS TÉCNICOS</div>
+            <h2 class="section-title reveal">
+                Corre em Tudo.<br /><span class="highlight">De Qualquer Lugar.</span>
+            </h2>
+            <p class="section-sub reveal">
+                Extrema MTB foi otimizado para rodar nos dispositivos mais acessíveis até setups premium.
+            </p>
+
+            <div class="req-tables reveal">
+
+                <div class="req-table-wrap">
+                    <div class="req-platform-badge android">
+                        <span></span> Android
+                    </div>
+                    <table class="req-table">
+                        <thead>
+                            <tr>
+                                <th>Componente</th>
+                                <th>Mínimo</th>
+                                <th>Recomendado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RAM</td>
+                                <td>3 GB</td>
+                                <td>6 GB+</td>
+                            </tr>
+                            <tr>
+                                <td>Armazenamento</td>
+                                <td>2 GB</td>
+                                <td>4 GB</td>
+                            </tr>
+                            <tr>
+                                <td>SO Android</td>
+                                <td>Android 9.0</td>
+                                <td>Android 12+</td>
+                            </tr>
+                            <tr>
+                                <td>SO iOS</td>
+                                <td>iOS 14</td>
+                                <td>iOS 16+</td>
+                            </tr>
+                            <tr>
+                                <td>Conexão</td>
+                                <td>Online (Multiplayer)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="req-table-wrap">
+                    <div class="req-platform-badge pc">
+                    </div>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       NEWSLETTER / CTA SECTION
+  ════════════════════════════════════════ -->
+    <section class="newsletter" id="newsletter">
+        <div class="newsletter-bg">
+            <img src="assets/hero_bg.png" alt="" class="nl-bg-img" />
+            <div class="nl-overlay"></div>
+        </div>
+        <div class="container nl-content">
+            <div class="section-label reveal" style="color:#fff8">// ACESSO ANTECIPADO</div>
+            <h2 class="section-title reveal" style="color:#fff">
+                Vai Encarar a Trilha<br />
+                <span class="highlight">ou Ficar para Trás? Cuidado com quem leva para a trilha rsrsrs</span>
+            </h2>
+            <p class="section-sub reveal" style="color:rgba(255,255,255,0.75); max-width:540px; margin:0 auto 2.5rem">
+                Inscreve-te agora para garantir acesso antecipado à Beta, bónus exclusivos e uma vaga
+                entre os primeiros piloto a dominar os trilhos de Araxá.
+            </p>
+
+            <form class="nl-form reveal" id="betaForm" novalidate>
+                <div class="nl-input-group">
+                    <input type="text" id="nlName" name="name" placeholder="O teu nome" autocomplete="given-name"
+                        required />
+                    <input type="email" id="nlEmail" name="email" placeholder="O teu melhor e-mail" autocomplete="email"
+                        required />
+                    <button type="submit" class="btn-primary btn-nl" id="nlSubmit">
+                        <span class="btn-text">Garantir Acesso Beta</span>
+                    </button>
+                </div>
+                <p class="nl-note">
+                    Zero spam. Apenas novidades do jogo. Podes cancelar a qualquer momento.
+                </p>
+            </form>
+
+            <div class="nl-success" id="nlSuccess" style="display:none">
+                <h3>Estás dentro, piloto!</h3>
+                <p>Receberás um e-mail assim que a Beta abrir. Prepara-te para os trilhos.</p>
+            </div>
+
+            <div class="nl-perks reveal">
+                <div class="perk">
+                    <span class="perk-icon">🎯</span>
+                    <span>Acesso Beta Exclusivo</span>
+                </div>
+                <div class="perk">
+                    <span class="perk-icon">🚲</span>
+                    <span>Bike Especial de Beta Tester</span>
+                </div>
+                <div class="perk">
+                    <span class="perk-icon">🏅</span>
+                    <span>Badge "Fundador do Trilho"</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#hero" class="nav-logo footer-logo"> <span class="logo-text">EXTREMA
+                        <strong>MTB</strong></span>
+                </a>
+                <p class="footer-tagline">
+                    Desenvolvido com muito café por<br />
+                    <strong>Code Warriors Studio</strong> — Araxá, MG, Brasil
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <a href="#experience">O Jogo</a>
+                    <a href="#features">Funcionalidades</a>
+                    <a href="#characters">Rivais</a>
+                    <a href="#requirements">Requisitos</a>
+                    <a href="#newsletter">Acesso Beta</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Code Warriors</h4>
+                    <a href="#" target="_blank" rel="noopener">Sobre Nós</a>
+                    <a href="#" target="_blank" rel="noopener">Outros Jogos</a>
+                    <a href="#" target="_blank" rel="noopener">Imprensa & Media</a>
+                    <a href="#" target="_blank" rel="noopener">Política de Privacidade</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <a href="https://www.reddit.com/r/ExtremaMTB/" target="_blank" rel="noopener" class="social-link">
+                        <svg viewBox="0 0 24 24" class="social-icon">
+                            <path
+                                d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z" />
+                        </svg>
+                        Reddit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <span>© 2026 Code Warriors Studio. Todos os direitos reservados.</span>
+                <span class="footer-bottom-tagline">Feito pelo<span class="orange">Senai</span> em Araxá, MG</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
