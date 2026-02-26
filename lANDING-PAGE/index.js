@@ -10,7 +10,7 @@ const hamburger = document.getElementById('navHamburger');
 const mobileMenu = document.getElementById('navMobileMenu');
 
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
+  navbar.classList.toggle('scrolled', window.scrollY > 90);
   backToTopBtn.classList.toggle('visible', window.scrollY > 400);
 }, { passive: true });
 
@@ -205,3 +205,44 @@ document.querySelectorAll('.feature-card').forEach(card => {
     card.style.transform = '';
   });
 });
+
+/* ── 11. GALLERY LIGHTBOX ────────────────────────────────── */
+const galleryItems = document.querySelectorAll('.gallery-item');
+const lightbox = document.getElementById('galleryLightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+
+if (galleryItems.length > 0 && lightbox) {
+  galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const src = item.getAttribute('data-src');
+      if (src) {
+        lightboxImg.src = src;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  const closeLightbox = () => {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+    setTimeout(() => {
+      lightboxImg.src = '';
+    }, 300);
+  };
+
+  lightboxClose.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
+}

@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,900&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="gallery.css" />
 </head>
 
 <body>
@@ -28,9 +29,14 @@
                 <li><a href="#experience">O Jogo</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#characters">Rivais</a></li>
+                <li><a href="#gallery">Galeria</a></li>
                 <li><a href="#requirements">Requisitos</a></li>
             </ul>
-            <a href="#newsletter" class="nav-cta">Beta: Em Breve</a>
+            <div class="nav-actions" style="display: flex; gap: 1rem; align-items: center;">
+                <a href="#team" class="nav-team-btn btn-ghost"
+                    style="padding: 0.55rem 1.3rem; font-size: 0.95rem;">Equipe Técnica</a>
+                <a href="#newsletter" class="nav-cta">Beta: Em Breve</a>
+            </div>
             <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
@@ -39,7 +45,9 @@
             <a href="#experience" onclick="closeMobileMenu()">O Jogo</a>
             <a href="#features" onclick="closeMobileMenu()">Features</a>
             <a href="#characters" onclick="closeMobileMenu()">Rivais</a>
+            <a href="#gallery" onclick="closeMobileMenu()">Galeria</a>
             <a href="#requirements" onclick="closeMobileMenu()">Requisitos</a>
+            <a href="#team" onclick="closeMobileMenu()">Equipe Técnica</a>
             <a href="#newsletter" class="nav-cta-mobile" onclick="closeMobileMenu()">Quero Acesso Beta</a>
         </div>
     </nav>
@@ -49,7 +57,10 @@
   ════════════════════════════════════════ -->
     <section class="hero" id="hero">
         <div class="hero-bg">
-            <img src="assets/hero_bg.png" alt="Ciclista em backflip na floresta de Araxá" class="hero-img" />
+            <video autoplay loop muted playsinline class="hero-img"
+                style="object-fit: cover; width: 100%; height: 100%;">
+                <source src="assets/video2.mp4" type="video/mp4">
+            </video>
             <div class="hero-overlay"></div>
             <div class="hero-noise"></div>
         </div>
@@ -418,12 +429,12 @@
                     </table>
                 </div>
 
-                <div class="req-table-wrap">
-                    <div class="req-platform-badge pc">
-                    </div>
-                    </tr>
-                    </tbody>
-                    </table>
+                <div class="req-table-wrap"
+                    style="display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: var(--radius-md);">
+                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                        <source src="assets/video1 (2).mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
                 </div>
 
             </div>
@@ -435,7 +446,10 @@
   ════════════════════════════════════════ -->
     <section class="newsletter" id="newsletter">
         <div class="newsletter-bg">
-            <img src="assets/hero_bg.png" alt="" class="nl-bg-img" />
+            <video autoplay loop muted playsinline class="nl-bg-img"
+                style="object-fit: cover; width: 100%; height: 100%;">
+                <source src="assets/video2.mp4" type="video/mp4">
+            </video>
             <div class="nl-overlay"></div>
         </div>
         <div class="container nl-content">
@@ -484,64 +498,210 @@
                 </div>
             </div>
         </div>
-    </section>
+        <!-- ════════════════════════════════════════
+       GALERIA DE PRODUÇÃO
+  ════════════════════════════════════════ -->
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="section-label reveal">// BASTIDORES DO CAOS</div>
+                <h2 class="section-title reveal">
+                    Galeria de<br /><span class="highlight">Produção.</span>
+                </h2>
+                <p class="section-sub reveal">
+                    Imagens exclusivas do desenvolvimento, artes conceituais e testes de física no motor do jogo.
+                </p>
 
-    <!-- ════════════════════════════════════════
+                <div class="gallery-grid reveal">
+                    <div class="gallery-item" data-src="assets/nanobanana.png">
+                        <img src="assets/nanobanana.png" alt="Concept Art 1" loading="lazy" />
+                        <div class="gallery-overlay"><span>Ampliar</span></div>
+                    </div>
+                    <div class="gallery-item" data-src="assets/ChatGPT Image 7 de jul. de 2025, 21_41_57.png">
+                        <img src="assets/ChatGPT Image 7 de jul. de 2025, 21_41_57.png" alt="Desenvolvimento Cena 1"
+                            loading="lazy" />
+                        <div class="gallery-overlay"><span>Ampliar</span></div>
+                    </div>
+                    <div class="gallery-item span-row-2"
+                        data-src="assets/ChatGPT Image 7 de jul. de 2025, 21_45_36.png">
+                        <img src="assets/ChatGPT Image 7 de jul. de 2025, 21_45_36.png"
+                            alt="Teste de Iluminação e Terreno" loading="lazy" />
+                        <div class="gallery-overlay"><span>Ampliar</span></div>
+                    </div>
+                    <div class="gallery-item" data-src="assets/c9a9871d-d79b-4e18-844a-129eae20fdc1.png">
+                        <img src="assets/c9a9871d-d79b-4e18-844a-129eae20fdc1.png" alt="Modelagem 3D Base"
+                            loading="lazy" />
+                        <div class="gallery-overlay"><span>Ampliar</span></div>
+                    </div>
+                    <div class="gallery-item" data-src="assets/unnamed (1).png">
+                        <img src="assets/unnamed (1).png" alt="Cenário de Teste 1" loading="lazy" />
+                        <div class="gallery-overlay"><span>Ampliar</span></div>
+                    </div>
+                    <div class="gallery-item" data-src="assets/unnamed.png">
+                        <img src="assets/unnamed.png" alt="Cenário de Teste 2" loading="lazy" />
+                        <div class="gallery-overlay"><span>Ampliar</span></div>
+                    </div>
+                    <div class="gallery-item span-col-2"
+                        data-src="assets/7ab16d8e7e7808544670309db4407d49393f1018-1800x1080.avif">
+                        <img src="assets/7ab16d8e7e7808544670309db4407d49393f1018-1800x1080.avif" alt="Arte Promocional"
+                            loading="lazy" />
+                        <div class="gallery-overlay"><span>Ampliar</span></div>
+                    </div>
+                    <div class="gallery-item" data-src="assets/unnamed (2).png">
+                        <img src="assets/unnamed (2).png" alt="Estudo de Layout" loading="lazy" />
+                        <div class="gallery-overlay"><span>Ampliar</span></div>
+                    </div>
+                    <div class="gallery-item" data-src="assets/unnamed (3).png">
+                        <img src="assets/unnamed (3).png" alt="Detalhamento do Mapa" loading="lazy" />
+                        <div class="gallery-overlay"><span>Ampliar</span></div>
+                    </div>
+                    <div class="gallery-item" data-src="assets/FinalProduct.jpg">
+                        <img src="assets/FinalProduct.jpg" alt="Render Final" loading="lazy" />
+                        <div class="gallery-overlay"><span>Ampliar</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
+       EQUIPE TÉCNICA
+  ════════════════════════════════════════ -->
+        <section class="team" id="team" style="padding: 6rem 0; background: var(--dark-2); position: relative;">
+            <div class="container">
+                <div class="section-label reveal">// EQUIPE DE DESENVOLVIMENTO</div>
+                <h2 class="section-title reveal">
+                    A Equipe Por Trás<br /><span class="highlight">Do Caos.</span>
+                </h2>
+                <div class="team-grid reveal"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+                    <div class="team-card"
+                        style="background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
+                        <h3
+                            style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
+                            Gustavo</h3>
+                        <div class="team-role"
+                            style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
+                            Líder do grupo, idealizador</div>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
+                                style="color: var(--orange);">Função:</strong> Visão geral do jogo, Interface e
+                            Controles.
+                        </p>
+                    </div>
+                    <div class="team-card"
+                        style="background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
+                        <h3
+                            style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
+                            Rita</h3>
+                        <div class="team-role"
+                            style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
+                            Design visual e sonoro</div>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
+                                style="color: var(--orange);">Função:</strong> Direção de Arte e Trilha Sonora.</p>
+                    </div>
+                    <div class="team-card"
+                        style="background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
+                        <h3
+                            style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
+                            Layane</h3>
+                        <div class="team-role"
+                            style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
+                            Desenvolvimento e organização</div>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
+                                style="color: var(--orange);">Função:</strong> Mecânicas principais, Cronograma e
+                            Escopo.
+                        </p>
+                    </div>
+                    <div class="team-card"
+                        style="background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
+                        <h3
+                            style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
+                            Raphael</h3>
+                        <div class="team-role"
+                            style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
+                            Planejamento e estratégia</div>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
+                                style="color: var(--orange);">Função:</strong> Público-Alvo, Plataforma e Estrutura de
+                            Equipe.</p>
+                    </div>
+                    <div class="team-card"
+                        style="background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
+                        <h3
+                            style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
+                            Paola</h3>
+                        <div class="team-role"
+                            style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
+                            Criação narrativa</div>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
+                                style="color: var(--orange);">Função:</strong> Desenvolvimento de Personagens, História
+                            e
+                            Narrativa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════════════════════════════════════════
        FOOTER
   ════════════════════════════════════════ -->
-    <footer class="footer">
-        <div class="container footer-inner">
-            <div class="footer-brand">
-                <a href="#hero" class="nav-logo footer-logo"> <span class="logo-text">EXTREMA
-                        <strong>MTB</strong></span>
-                </a>
-                <p class="footer-tagline">
-                    Desenvolvido com muito café por<br />
-                    <strong>Code Warriors Studio</strong> — Araxá, MG, Brasil
-                </p>
-            </div>
-
-            <div class="footer-links">
-                <div class="footer-col">
-                    <h4>Navegação</h4>
-                    <a href="#experience">O Jogo</a>
-                    <a href="#features">Funcionalidades</a>
-                    <a href="#characters">Rivais</a>
-                    <a href="#requirements">Requisitos</a>
-                    <a href="#newsletter">Acesso Beta</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Code Warriors</h4>
-                    <a href="#" target="_blank" rel="noopener">Sobre Nós</a>
-                    <a href="#" target="_blank" rel="noopener">Outros Jogos</a>
-                    <a href="#" target="_blank" rel="noopener">Imprensa & Media</a>
-                    <a href="#" target="_blank" rel="noopener">Política de Privacidade</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Redes Sociais</h4>
-                    <a href="https://www.reddit.com/r/ExtremaMTB/" target="_blank" rel="noopener" class="social-link">
-                        <svg viewBox="0 0 24 24" class="social-icon">
-                            <path
-                                d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z" />
-                        </svg>
-                        Reddit
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo footer-logo"> <span class="logo-text">EXTREMA
+                            <strong>MTB</strong></span>
                     </a>
+                    <p class="footer-tagline">
+                        Desenvolvido com muito café por<br />
+                        <strong>Code Warriors Studio</strong> — Araxá, MG, Brasil
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navegação</h4>
+                        <a href="#experience">O Jogo</a>
+                        <a href="#features">Funcionalidades</a>
+                        <a href="#characters">Rivais</a>
+                        <a href="#requirements">Requisitos</a>
+                        <a href="#newsletter">Acesso Beta</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Code Warriors</h4>
+                        <a href="#" target="_blank" rel="noopener">Sobre Nós</a>
+                        <a href="#" target="_blank" rel="noopener">Outros Jogos</a>
+                        <a href="#" target="_blank" rel="noopener">Imprensa & Media</a>
+                        <a href="#" target="_blank" rel="noopener">Política de Privacidade</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Redes Sociais</h4>
+                        <a href="https://www.reddit.com/r/ExtremaMTB/" target="_blank" rel="noopener"
+                            class="social-link">
+                            <svg viewBox="0 0 24 24" class="social-icon">
+                                <path
+                                    d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z" />
+                            </svg>
+                            Reddit
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="footer-bottom">
-            <div class="container footer-bottom-inner">
-                <span>© 2026 Code Warriors Studio. Todos os direitos reservados.</span>
-                <span class="footer-bottom-tagline">Feito pelo<span class="orange">Senai</span> em Araxá, MG</span>
+            <div class="footer-bottom">
+                <div class="container footer-bottom-inner">
+                    <span>© 2026 Code Warriors Studio. Todos os direitos reservados.</span>
+                    <span class="footer-bottom-tagline">Feito pelo<span class="orange">Senai</span> em Araxá, MG</span>
+                </div>
             </div>
+        </footer>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="galleryLightbox">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Fechar Galeria">&times;</button>
+            <img class="lightbox-img" id="lightboxImg" src="" alt="Imagem Ampliada" />
         </div>
-    </footer>
 
-    <!-- Back to top -->
-    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+        <!-- Back to top -->
+        <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
 
-    <script src="index.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>

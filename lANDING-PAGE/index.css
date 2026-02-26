@@ -1317,6 +1317,11 @@ ul {
   background: var(--dark-2);
   border-top: 1px solid var(--border);
   padding: 4rem 0 0;
+  position: relative;
+  z-index: 10;
+  display: block;
+  clear: both;
+  width: 100%;
 }
 
 .footer-inner {
@@ -1447,7 +1452,9 @@ ul {
 @media (max-width: 960px) {
 
   .nav-links,
-  .nav-cta {
+  .nav-actions,
+  .nav-cta,
+  .nav-team-btn {
     display: none;
   }
 
