@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
         content="Extrema MTB – O simulador de Mountain Bike mais intenso para mobile e PC. Domina trilhos reais em Araxá, personaliza tua bike e derruba os rivais. Garante teu acesso antecipado à Beta!" />
-    <title>Extrema MTB – Sente a Adrenalina do Mountain Bike Puro em Araxá</title>
+    <title>Extrema MTB – Sinta a Adrenalina do Mountain Bike Puro em Araxá</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,900&family=Inter:wght@300;400;500;600&display=swap"
@@ -74,7 +74,7 @@
             </div>
 
             <h1 class="hero-headline reveal">
-                Sente a Adrenalina<br />
+                Sinta a Adrenalina<br />
                 do <span class="highlight">Mountain Bike</span><br />
                 Puro em <span class="highlight-city">Araxá.</span>
             </h1>
@@ -185,18 +185,22 @@
             <div class="features-grid">
 
                 <div class="feature-card reveal" style="--delay:0ms">
-                    <div class="fc-icon-wrap">
+                    <div class="fc-icon-wrap" style="overflow: hidden;">
+                        <img src="assets/unnamed.png" alt="Icone Física"
+                            style="width: 100%; height: 100%; object-fit: cover;" />
                     </div>
                     <h3>Física Semirrealista</h3>
                     <p>
-                        Sente cada impacto e controla o teu equilíbrio em descidas vertiginosas.
+                        Sinta cada impacto e controle o seu equilíbrio em descidas vertiginosas.
                         O motor de física responde a cada variação do terreno: pedras, raízes, lama e poeira.
                     </p>
                     <div class="fc-tag">Motor Próprio</div>
                 </div>
 
                 <div class="feature-card reveal" style="--delay:100ms">
-                    <div class="fc-icon-wrap">
+                    <div class="fc-icon-wrap" style="overflow: hidden;">
+                        <img src="assets/unnamed (3).png" alt="Icone Mundo Aberto"
+                            style="width: 100%; height: 100%; object-fit: cover;" />
                     </div>
                     <h3>Mundo Aberto & Trilhas Reais</h3>
                     <p>
@@ -207,7 +211,9 @@
                 </div>
 
                 <div class="feature-card reveal" style="--delay:200ms">
-                    <div class="fc-icon-wrap">
+                    <div class="fc-icon-wrap" style="overflow: hidden;">
+                        <img src="assets/c9a9871d-d79b-4e18-844a-129eae20fdc1.png" alt="Icone Personalização"
+                            style="width: 100%; height: 100%; object-fit: cover;" />
                     </div>
                     <h3>Personalização Total</h3>
                     <p>
@@ -218,7 +224,9 @@
                 </div>
 
                 <div class="feature-card reveal" style="--delay:300ms">
-                    <div class="fc-icon-wrap">
+                    <div class="fc-icon-wrap" style="overflow: hidden;">
+                        <img src="assets/7ab16d8e7e7808544670309db4407d49393f1018-1800x1080.avif" alt="Icone Combate"
+                            style="width: 100%; height: 100%; object-fit: cover;" />
                     </div>
                     <h3>Sistema de Combate</h3>
                     <p>
@@ -511,53 +519,68 @@
                     Imagens exclusivas do desenvolvimento, artes conceituais e testes de física no motor do jogo.
                 </p>
 
-                <div class="gallery-grid reveal">
-                    <div class="gallery-item" data-src="assets/nanobanana.png">
-                        <img src="assets/nanobanana.png" alt="Concept Art 1" loading="lazy" />
-                        <div class="gallery-overlay"><span>Ampliar</span></div>
+                <div class="gallery-slider-wrap">
+                    <button class="gallery-nav-btn" id="galleryPrev" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <div class="gallery-slider" id="gallerySlider">
+                        <div class="gallery-item" data-src="assets/nanobanana.png">
+                            <img src="assets/nanobanana.png" alt="Concept Art 1" loading="lazy" />
+                            <div class="gallery-overlay"><span>Ampliar</span></div>
+                        </div>
+                        <div class="gallery-item" data-src="assets/ChatGPT Image 7 de jul. de 2025, 21_41_57.png">
+                            <img src="assets/ChatGPT Image 7 de jul. de 2025, 21_41_57.png" alt="Desenvolvimento Cena 1"
+                                loading="lazy" />
+                            <div class="gallery-overlay"><span>Ampliar</span></div>
+                        </div>
+                        <div class="gallery-item" data-src="assets/ChatGPT Image 7 de jul. de 2025, 21_45_36.png">
+                            <img src="assets/ChatGPT Image 7 de jul. de 2025, 21_45_36.png"
+                                alt="Teste de Iluminação e Terreno" loading="lazy" />
+                            <div class="gallery-overlay"><span>Ampliar</span></div>
+                        </div>
+                        <div class="gallery-item" data-src="assets/c9a9871d-d79b-4e18-844a-129eae20fdc1.png">
+                            <img src="assets/c9a9871d-d79b-4e18-844a-129eae20fdc1.png" alt="Modelagem 3D Base"
+                                loading="lazy" />
+                            <div class="gallery-overlay"><span>Ampliar</span></div>
+                        </div>
+                        <div class="gallery-item" data-src="assets/unnamed (1).png">
+                            <img src="assets/unnamed (1).png" alt="Cenário de Teste 1" loading="lazy" />
+                            <div class="gallery-overlay"><span>Ampliar</span></div>
+                        </div>
+                        <div class="gallery-item" data-src="assets/unnamed.png">
+                            <img src="assets/unnamed.png" alt="Cenário de Teste 2" loading="lazy" />
+                            <div class="gallery-overlay"><span>Ampliar</span></div>
+                        </div>
+                        <div class="gallery-item"
+                            data-src="assets/7ab16d8e7e7808544670309db4407d49393f1018-1800x1080.avif">
+                            <img src="assets/7ab16d8e7e7808544670309db4407d49393f1018-1800x1080.avif"
+                                alt="Arte Promocional" loading="lazy" />
+                            <div class="gallery-overlay"><span>Ampliar</span></div>
+                        </div>
+                        <div class="gallery-item" data-src="assets/unnamed (2).png">
+                            <img src="assets/unnamed (2).png" alt="Estudo de Layout" loading="lazy" />
+                            <div class="gallery-overlay"><span>Ampliar</span></div>
+                        </div>
+                        <div class="gallery-item" data-src="assets/unnamed (3).png">
+                            <img src="assets/unnamed (3).png" alt="Detalhamento do Mapa" loading="lazy" />
+                            <div class="gallery-overlay"><span>Ampliar</span></div>
+                        </div>
+                        <div class="gallery-item" data-src="assets/FinalProduct.jpg">
+                            <img src="assets/FinalProduct.jpg" alt="Render Final" loading="lazy" />
+                            <div class="gallery-overlay"><span>Ampliar</span></div>
+                        </div>
                     </div>
-                    <div class="gallery-item" data-src="assets/ChatGPT Image 7 de jul. de 2025, 21_41_57.png">
-                        <img src="assets/ChatGPT Image 7 de jul. de 2025, 21_41_57.png" alt="Desenvolvimento Cena 1"
-                            loading="lazy" />
-                        <div class="gallery-overlay"><span>Ampliar</span></div>
-                    </div>
-                    <div class="gallery-item span-row-2"
-                        data-src="assets/ChatGPT Image 7 de jul. de 2025, 21_45_36.png">
-                        <img src="assets/ChatGPT Image 7 de jul. de 2025, 21_45_36.png"
-                            alt="Teste de Iluminação e Terreno" loading="lazy" />
-                        <div class="gallery-overlay"><span>Ampliar</span></div>
-                    </div>
-                    <div class="gallery-item" data-src="assets/c9a9871d-d79b-4e18-844a-129eae20fdc1.png">
-                        <img src="assets/c9a9871d-d79b-4e18-844a-129eae20fdc1.png" alt="Modelagem 3D Base"
-                            loading="lazy" />
-                        <div class="gallery-overlay"><span>Ampliar</span></div>
-                    </div>
-                    <div class="gallery-item" data-src="assets/unnamed (1).png">
-                        <img src="assets/unnamed (1).png" alt="Cenário de Teste 1" loading="lazy" />
-                        <div class="gallery-overlay"><span>Ampliar</span></div>
-                    </div>
-                    <div class="gallery-item" data-src="assets/unnamed.png">
-                        <img src="assets/unnamed.png" alt="Cenário de Teste 2" loading="lazy" />
-                        <div class="gallery-overlay"><span>Ampliar</span></div>
-                    </div>
-                    <div class="gallery-item span-col-2"
-                        data-src="assets/7ab16d8e7e7808544670309db4407d49393f1018-1800x1080.avif">
-                        <img src="assets/7ab16d8e7e7808544670309db4407d49393f1018-1800x1080.avif" alt="Arte Promocional"
-                            loading="lazy" />
-                        <div class="gallery-overlay"><span>Ampliar</span></div>
-                    </div>
-                    <div class="gallery-item" data-src="assets/unnamed (2).png">
-                        <img src="assets/unnamed (2).png" alt="Estudo de Layout" loading="lazy" />
-                        <div class="gallery-overlay"><span>Ampliar</span></div>
-                    </div>
-                    <div class="gallery-item" data-src="assets/unnamed (3).png">
-                        <img src="assets/unnamed (3).png" alt="Detalhamento do Mapa" loading="lazy" />
-                        <div class="gallery-overlay"><span>Ampliar</span></div>
-                    </div>
-                    <div class="gallery-item" data-src="assets/FinalProduct.jpg">
-                        <img src="assets/FinalProduct.jpg" alt="Render Final" loading="lazy" />
-                        <div class="gallery-overlay"><span>Ampliar</span></div>
-                    </div>
+
+                    <button class="gallery-nav-btn" id="galleryNext" aria-label="Próximo">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
@@ -571,70 +594,88 @@
                 <h2 class="section-title reveal">
                     A Equipe Por Trás<br /><span class="highlight">Do Caos.</span>
                 </h2>
-                <div class="team-grid reveal"
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
-                    <div class="team-card"
-                        style="background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
-                        <h3
-                            style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
-                            Gustavo</h3>
-                        <div class="team-role"
-                            style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
-                            Líder do grupo, idealizador</div>
-                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
-                                style="color: var(--orange);">Função:</strong> Visão geral do jogo, Interface e
-                            Controles.
-                        </p>
+                <div class="gallery-slider-wrap">
+                    <button class="gallery-nav-btn" id="teamPrev" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <div class="team-grid reveal" id="teamSlider"
+                        style="display: flex; gap: 1.5rem; overflow-x: auto; padding-bottom: 1rem; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none; flex-grow: 1;">
+                        <div class="team-card"
+                            style="flex: 0 0 250px; background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
+                            <h3
+                                style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
+                                Gustavo</h3>
+                            <div class="team-role"
+                                style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
+                                Líder do grupo, idealizador</div>
+                            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
+                                    style="color: var(--orange);">Função:</strong> Visão geral do jogo, Interface e
+                                Controles.
+                            </p>
+                        </div>
+                        <div class="team-card"
+                            style="flex: 0 0 250px; background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
+                            <h3
+                                style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
+                                Rita</h3>
+                            <div class="team-role"
+                                style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
+                                Design visual e sonoro</div>
+                            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
+                                    style="color: var(--orange);">Função:</strong> Direção de Arte e Trilha Sonora.</p>
+                        </div>
+                        <div class="team-card"
+                            style="flex: 0 0 250px; background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
+                            <h3
+                                style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
+                                Layane</h3>
+                            <div class="team-role"
+                                style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
+                                Desenvolvimento e organização</div>
+                            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
+                                    style="color: var(--orange);">Função:</strong> Mecânicas principais, Cronograma e
+                                Escopo.
+                            </p>
+                        </div>
+                        <div class="team-card"
+                            style="flex: 0 0 250px; background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
+                            <h3
+                                style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
+                                Raphael</h3>
+                            <div class="team-role"
+                                style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
+                                Planejamento e estratégia</div>
+                            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
+                                    style="color: var(--orange);">Função:</strong> Público-Alvo, Plataforma e Estrutura
+                                de
+                                Equipe.</p>
+                        </div>
+                        <div class="team-card"
+                            style="flex: 0 0 250px; background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
+                            <h3
+                                style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
+                                Paola</h3>
+                            <div class="team-role"
+                                style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
+                                Criação narrativa</div>
+                            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
+                                    style="color: var(--orange);">Função:</strong> Desenvolvimento de Personagens,
+                                História
+                                e
+                                Narrativa.</p>
+                        </div>
                     </div>
-                    <div class="team-card"
-                        style="background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
-                        <h3
-                            style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
-                            Rita</h3>
-                        <div class="team-role"
-                            style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
-                            Design visual e sonoro</div>
-                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
-                                style="color: var(--orange);">Função:</strong> Direção de Arte e Trilha Sonora.</p>
-                    </div>
-                    <div class="team-card"
-                        style="background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
-                        <h3
-                            style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
-                            Layane</h3>
-                        <div class="team-role"
-                            style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
-                            Desenvolvimento e organização</div>
-                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
-                                style="color: var(--orange);">Função:</strong> Mecânicas principais, Cronograma e
-                            Escopo.
-                        </p>
-                    </div>
-                    <div class="team-card"
-                        style="background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
-                        <h3
-                            style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
-                            Raphael</h3>
-                        <div class="team-role"
-                            style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
-                            Planejamento e estratégia</div>
-                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
-                                style="color: var(--orange);">Função:</strong> Público-Alvo, Plataforma e Estrutura de
-                            Equipe.</p>
-                    </div>
-                    <div class="team-card"
-                        style="background: var(--dark-3); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; transition: transform var(--transition); text-align: left;">
-                        <h3
-                            style="font-family: var(--font-title); font-size: 1.5rem; text-transform: uppercase; color: var(--white); margin-bottom: 0.3rem;">
-                            Paola</h3>
-                        <div class="team-role"
-                            style="font-size: 0.85rem; color: var(--grey-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">
-                            Criação narrativa</div>
-                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5;"><strong
-                                style="color: var(--orange);">Função:</strong> Desenvolvimento de Personagens, História
-                            e
-                            Narrativa.</p>
-                    </div>
+
+                    <button class="gallery-nav-btn" id="teamNext" aria-label="Próximo">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>

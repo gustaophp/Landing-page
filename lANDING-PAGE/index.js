@@ -246,3 +246,37 @@ if (galleryItems.length > 0 && lightbox) {
     }
   });
 }
+
+/* ── 12. GALLERY SLIDER ──────────────────────────────────── */
+const gallerySlider = document.getElementById('gallerySlider');
+const galleryPrev = document.getElementById('galleryPrev');
+const galleryNext = document.getElementById('galleryNext');
+
+if (gallerySlider && galleryPrev && galleryNext) {
+  const scrollAmount = 320; // Aproximadamente card (300) + gap (1.5rem)
+
+  galleryPrev.addEventListener('click', () => {
+    gallerySlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  galleryNext.addEventListener('click', () => {
+    gallerySlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+}
+
+/* ── 13. TEAM SLIDER ─────────────────────────────────────── */
+const teamSlider = document.getElementById('teamSlider');
+const teamPrev = document.getElementById('teamPrev');
+const teamNext = document.getElementById('teamNext');
+
+if (teamSlider && teamPrev && teamNext) {
+  const teamScrollAmount = 280; // Card (250) + gap (1.5rem)
+
+  teamPrev.addEventListener('click', () => {
+    teamSlider.scrollBy({ left: -teamScrollAmount, behavior: 'smooth' });
+  });
+
+  teamNext.addEventListener('click', () => {
+    teamSlider.scrollBy({ left: teamScrollAmount, behavior: 'smooth' });
+  });
+}
